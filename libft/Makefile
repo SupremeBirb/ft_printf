@@ -12,7 +12,7 @@
 
 NAME = libft.a
 
-#Marcos
+#Macros
 CC = @gcc
 CFLAGS = -Wall -Wextra -Werror -I. -c
 
@@ -84,7 +84,7 @@ SRC = ft_strlen.c \
 			ft_delete_list.c \
 			ft_multi_string_array.c \
 			ft_numcharstrn.c \
-			get_next_line.c \
+			get_next_line.c 
 			
 
 OBJ = $(SRC:.c=.o)
