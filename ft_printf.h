@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: potatobirb <potatobirb@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lelee <lelee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/01 12:30:44 by potatobirb        #+#    #+#             */
-/*   Updated: 2019/10/02 06:34:07 by potatobirb       ###   ########.fr       */
+/*   Updated: 2019/10/02 07:29:35 by lelee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 /*
 ** Function Dispatch Table
 */
-typedef int fmtcheck(char const *fmt, va_list ap);
+typedef int checker(char const *fmt, va_list ap);
 
 /*
 ** Printf Function
