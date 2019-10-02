@@ -1,4 +1,4 @@
-NAME = printf.a
+NAME = libftprintf.a
 
 CC = @gcc
 CFLAGS = -Wall -Wextra -Werror -gcc
@@ -6,7 +6,7 @@ CFLAGS = -Wall -Wextra -Werror -gcc
 SRC = print.c \
 
 
-
+w
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)

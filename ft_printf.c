@@ -18,6 +18,7 @@ int		printf(char const *fmt, ...)
 	va_list ap;
 
 	va_start(ap, fmt);
-	ret = 
+	ret = fmtcheck(fmt, ap);
 	va_end(ap);
+	return (ret);
 }
