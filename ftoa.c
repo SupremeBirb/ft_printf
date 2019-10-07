@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ftoa.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lelee <lelee@student.42.fr>                +#+  +:+       +#+        */
+/*   By: potatobirb <potatobirb@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/01 12:30:37 by potatobirb        #+#    #+#             */
-/*   Updated: 2019/10/02 09:25:13 by lelee            ###   ########.fr       */
+/*   Updated: 2019/10/03 05:51:52 by potatobirb       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,9 @@ void		ftoa(float n, char *res, int afterpoint)
 
 	ipart = (int)n;
 	fpart = n - (float)ipart;
-	fpart = fpart * power(10, afterpoint);
+	printf("fpart: %f\n", fpart);
+	fpart = (int)(fpart * power(10, afterpoint * 2));
+	printf("fpart: %f\n", fpart);
 	res = ft_strcat(ft_strcat(ft_itoa(ipart), "."), ft_strncpy(res, ft_itoa(fpart), afterpoint));
 	printf("fpart convert: %f\n", fpart);
 	printf("res after itoa: %s\n", res);
@@ -50,7 +52,8 @@ void		ftoa(float n, char *res, int afterpoint)
 int			main(void)
 {
 	char	*res;
-	float	tst = 4323.3244;
+	float	tst = 436.3245;
+
 	res = ft_strnew(1);
 	ftoa(tst, res, 4);
 }
