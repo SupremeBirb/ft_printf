@@ -6,7 +6,7 @@
 /*   By: lelee <lelee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/01 12:30:44 by potatobirb        #+#    #+#             */
-/*   Updated: 2019/10/02 07:29:35 by lelee            ###   ########.fr       */
+/*   Updated: 2019/10/14 04:20:22 by lelee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 /*
 ** Function Dispatch Table
 */
+
 typedef int checker(char const *fmt, va_list ap);
 
 /*
@@ -29,6 +30,12 @@ typedef int checker(char const *fmt, va_list ap);
 */
 
 int	ft_printf(char const *fmt, ...);	
+
+/*
+** Format String
+*/
+
+int	fmtstring(char const *fmt, va_list ap);
 
 /*
 ** Format CHeckers
@@ -48,9 +55,6 @@ int G_check(char const *fmt, va_list ap);
 int p_check(char const *fmt, va_list ap);
 int n_check(char const *fmt, va_list ap);
 int percent_check(char const *fmt, va_list ap);
-
-/*
-** Format Identifiers
-*/
+int dot_check(char const *fmt, va_list ap);
 
 #endif
